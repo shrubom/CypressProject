@@ -26,5 +26,11 @@ describe("My first test suite", function () {
             .click();
         }
       });
+    // let logo = cy.get("div.brand.greenlogo");
+    // cy.log(logo.text());
+    //Line 29 and 30 will not work.
+    cy.get("div.brand.greenlogo").then(function (logoElement) {
+      cy.log(logoElement.text());
+    });
   });
 });
