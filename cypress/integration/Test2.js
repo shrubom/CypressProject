@@ -26,5 +26,17 @@ describe("My second test suite", function () {
     });
     cy.get("#autocomplete").should("have.value", "India");
   });
-  it("Visibilty and invisibility of your page objects", function () {});
+  it("Visibilty and invisibility of your page objects", function () {
+    cy.get("#displayed-text").should("be.visible");
+    cy.get("#hide-textbox").click();
+    cy.get("#displayed-text").should("not.be.visible");
+    cy.get("#show-textbox").click();
+  });
+  it("Radio Button Validations and Advanced ui validations", function () {
+    cy.get('input[value="radio2"]').check().should("be.checked");
+  });
+  //Handliong Alerts
+  it("Handling alert pop ups", function () {
+    cy.get("#alertbtn").click();
+  });
 });
