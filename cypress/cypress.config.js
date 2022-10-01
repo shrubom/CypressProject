@@ -5,6 +5,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    specPattern: "integration/Test3.js",
+    specPattern: "integration/Test4.js",
   },
 });
