@@ -17,10 +17,10 @@ describe("Test suite 4", function () {
   });
   it("Mouse hover ui behavior", function () {
     //This is one method if you have to do validations for mousehover and see if the hidden elements are clickable
-    // cy.get("div.mouse-hover-content").invoke("show");
+    cy.get("div.mouse-hover-content").invoke("show");
     //Now if you dont care about mouse hover and just want to click on the options even if they are hidden mode use the follwoing
     cy.contains("Top").click({ force: true });
-    // cy.contains("Top").click();
+    cy.contains("Top").click();
     cy.url().should("include", "top");
   });
 });
