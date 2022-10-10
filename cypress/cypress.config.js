@@ -6,5 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     specPattern: "integration/TestFramework.js",
+    defaultCommandTimeout: 8000,
+    pageLoadTimeout: 10000,
   },
 });
