@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: 'rxxugq',
+  projectId: "rxxugq",
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -9,6 +9,7 @@ module.exports = defineConfig({
     specPattern: "integration/TestFramework.js",
     defaultCommandTimeout: 8000,
     pageLoadTimeout: 10000,
+    reporter: "mochaswesome",
   },
   env: {
     url: "https://rahulshettyacademy.com/angularpractice/",
