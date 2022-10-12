@@ -9,7 +9,7 @@ module.exports = defineConfig({
     specPattern: "integration/TestFramework.js",
     defaultCommandTimeout: 8000,
     pageLoadTimeout: 10000,
-    reporter: "mochaswesome",
+    reporter: "mochawesome",
   },
   env: {
     url: "https://rahulshettyacademy.com/angularpractice/",
