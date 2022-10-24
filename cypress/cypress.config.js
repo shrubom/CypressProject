@@ -14,4 +14,7 @@ module.exports = defineConfig({
   env: {
     url: "https://rahulshettyacademy.com/angularpractice/",
   },
+  retries: {
+    runMode: 1,
+  },
 });
