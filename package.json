@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "//Users//shruti.panicker//Desktop//CypressProject//node_modules//.bin//cypress run"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,13 @@
   "homepage": "https://github.com/shrubom/CypressProject#readme",
   "devDependencies": {
     "cypress": "^10.8.0",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "cypress-multi-reporters": "^1.6.1",
+    "mocha": "^10.0.0",
+    "mocha-junit-reporter": "^2.1.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.7"
   }
 }
