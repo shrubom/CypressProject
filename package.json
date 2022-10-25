@@ -6,6 +6,9 @@
   "scripts": {
     "test": "//Users//shruti.panicker//Desktop//CypressProject//node_modules//.bin//cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shrubom/CypressProject.git"
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/shrubom/CypressProject#readme",
   "devDependencies": {
     "cypress": "^10.8.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "cypress-multi-reporters": "^1.6.1",
     "mocha": "^10.0.0",
