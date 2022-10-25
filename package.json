@@ -7,7 +7,13 @@
     "test": "//Users//shruti.panicker//Desktop//CypressProject//node_modules//.bin//cypress run"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "repository": {
     "type": "git",
@@ -26,7 +32,8 @@
     "cypress-multi-reporters": "^1.6.1",
     "mocha": "^10.0.0",
     "mocha-junit-reporter": "^2.1.0",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "multiple-cucumber-html-reporter": "^3.0.1"
   },
   "dependencies": {
     "cucumber": "^6.0.7"

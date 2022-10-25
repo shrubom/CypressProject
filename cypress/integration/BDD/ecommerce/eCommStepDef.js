@@ -53,3 +53,16 @@ Then("select the country sub,it and verify Thankyou.", function () {
     expect(ele.text().includes("Success")).to.be.true;
   });
 });
+
+When("Add personal details", function (dataTable) {
+  homePageObj.getEditBox().type(dataTable.rawTable[1][0]);
+  homePageObj.getGender().select(dataTable.rawTable[1][1]);
+
+  //validation of the value entered in the name is the same in data binding example field
+  homePageObj.getTwoWayDataBinding().should("have.value", this.testData.name);
+  //Verify if the property minlength property is 2
+  homePageObj.getEditBox().should("have.attr", "minlength", "2");
+  //Validation of a radio button if it is disabled
+  homePageObj.getEnterprenuer().should("be.disabled");
+  homePageObj.getShopTab().click();
+});
